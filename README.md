@@ -25,6 +25,10 @@ Provider adapter -> Normaliser -> Validation -> PostgreSQL
                                      Quiz API / PWA
 ```
 
+## Playable prototype
+
+The mobile-first PWA is also available from the repository root for simple GitHub Pages setup. The prototype uses clearly labelled fictional demo data while the real licensed player feed is being integrated.
+
 ## Current structure
 
 - `database/schema.sql` — relational data model
