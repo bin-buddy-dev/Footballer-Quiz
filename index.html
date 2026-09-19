@@ -12,18 +12,10 @@
   <main class="app">
     <header class="app-header">
       <div class="crest">⚽</div>
-      <div>
-        <p class="eyebrow">THE ULTIMATE</p>
-        <h1>FOOTBALLER QUIZ</h1>
-      </div>
+      <div><p class="eyebrow">THE ULTIMATE</p><h1>FOOTBALLER QUIZ</h1></div>
       <div class="high-score">🏆<span>0</span></div>
     </header>
-
-    <section class="intro">
-      <p class="question">Can you identify the player?</p>
-      <p class="sub">Reveal clues, make your guess and keep as many points as possible.</p>
-    </section>
-
+    <section class="intro"><p class="question">Can you identify the player?</p><p class="sub">Reveal clues, make your guess and keep as many points as possible.</p></section>
     <section class="card hero">
       <div class="topline"><span id="mode">DEMO MODE</span><span id="score">100 PTS</span></div>
       <div class="clue-label">CLUE <span id="clueNo">1</span></div>
@@ -33,18 +25,11 @@
       <button id="guessBtn" class="primary" disabled>Guess Player</button>
       <button id="nextBtn" class="start">▶ Start Game</button>
     </section>
-
-    <section class="pitch-lines" aria-hidden="true">
-      <span class="centre-circle"></span>
-      <span class="halfway"></span>
-    </section>
-
-    <section class="how">
-      <strong>HOW IT WORKS</strong>
-      <p>Start with 100 points. A wrong guess reveals another clue and lowers the available score.</p>
-    </section>
+    <section class="pitch-lines" aria-hidden="true"><span class="centre-circle"></span><span class="halfway"></span></section>
+    <section class="how"><strong>HOW IT WORKS</strong><p>Start with 100 points. A wrong guess reveals another clue and lowers the available score.</p></section>
     <footer>Prototype • Real licensed player data will be connected next.</footer>
   </main>
 <script src="./app.js"></script>
+<script>if("serviceWorker" in navigator){navigator.serviceWorker.register("./sw.js").catch(()=>{});}</script>
 </body>
 </html>
