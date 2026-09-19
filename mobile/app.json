@@ -1,0 +1,13 @@
+{
+  "expo":{
+    "name":"Footballer Quiz",
+    "slug":"footballer-quiz",
+    "version":"1.0.0",
+    "orientation":"portrait",
+    "userInterfaceStyle":"dark",
+    "scheme":"footballerquiz",
+    "ios":{"supportsTablet":true,"bundleIdentifier":"com.footballerquiz.app"},
+    "android":{"package":"com.footballerquiz.app"},
+    "web":{"bundler":"metro"}
+  }
+}
