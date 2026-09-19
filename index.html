@@ -3,26 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#07111f">
-  <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="stylesheet" href="/styles.css">
+  <meta name="theme-color" content="#087a35">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
   <title>Footballer Quiz</title>
 </head>
 <body>
   <main class="app">
-    <header><div class="ball">⚽</div><div><p class="eyebrow">FOOTBALLER QUIZ</p><h1>Who’s the player?</h1></div></header>
+    <header class="app-header">
+      <div class="crest">⚽</div>
+      <div>
+        <p class="eyebrow">THE ULTIMATE</p>
+        <h1>FOOTBALLER QUIZ</h1>
+      </div>
+      <div class="high-score">🏆<span>0</span></div>
+    </header>
+
+    <section class="intro">
+      <p class="question">Can you identify the player?</p>
+      <p class="sub">Reveal clues, make your guess and keep as many points as possible.</p>
+    </section>
+
     <section class="card hero">
       <div class="topline"><span id="mode">DEMO MODE</span><span id="score">100 PTS</span></div>
       <div class="clue-label">CLUE <span id="clueNo">1</span></div>
-      <p id="clue" class="clue">Press Start Game to reveal your first clue.</p>
-      <div id="feedback" class="feedback"></div>
+      <p id="clue" class="clue">Tap Start Game to reveal your first clue.</p>
+      <div id="feedback" class="feedback" aria-live="polite"></div>
       <input id="guess" autocomplete="off" autocapitalize="words" placeholder="Type a player's name…" disabled>
       <button id="guessBtn" class="primary" disabled>Guess Player</button>
-      <button id="nextBtn" class="secondary">Start Game</button>
+      <button id="nextBtn" class="start">▶ Start Game</button>
     </section>
-    <section class="how"><strong>How it works</strong><p>Start with 100 points. Each wrong guess reveals another clue and reduces the available score.</p></section>
-    <footer>Prototype • Live player data will be connected in the next phase.</footer>
+
+    <section class="pitch-lines" aria-hidden="true">
+      <span class="centre-circle"></span>
+      <span class="halfway"></span>
+    </section>
+
+    <section class="how">
+      <strong>HOW IT WORKS</strong>
+      <p>Start with 100 points. A wrong guess reveals another clue and lowers the available score.</p>
+    </section>
+    <footer>Prototype • Real licensed player data will be connected next.</footer>
   </main>
-<script src="/app.js"></script>
+<script src="./app.js"></script>
 </body>
 </html>
