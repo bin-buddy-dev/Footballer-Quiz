@@ -1,1 +1,10 @@
-{"name":"Footballer Quiz","short_name":"Footballer Quiz","start_url":"/","display":"standalone","background_color":"#07111f","theme_color":"#07111f","description":"Identify the footballer from progressive clues."}
+{
+  "name":"Footballer Quiz",
+  "short_name":"Footballer Quiz",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "background_color":"#063d1d",
+  "theme_color":"#087a35",
+  "description":"Identify the footballer from progressive clues."
+}
